@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-div">
+        <div class="background-image">
+          <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="" />
+        </div>
+
+        <div class="logo-container">
+          <div class="logo-image">
+            <img src="images/odin-lined.png" alt="logo" />
+          </div>
+          <p>ODIN</p>
+        </div>
+      </div>
+      <div class="right-div">
+        <div class="top-section">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+            quaerat minus exercitationem impedit omnis quo dolore, velit cum
+            corrupti voluptates.
+          </p>
+          <p>
+            Lorem <em>ipsum dolor</em> sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="mid-section">
+          <fieldset>
+            <legend>Let's do this!</legend>
+
+            <div>
+              <label for="name">First Name</label>
+              <input type="text" id="name" />
+            </div>
+
+            <div>
+              <label for="surname">Last Name</label>
+              <input type="text" id="surname" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div>
+              <label for="cell">Phone Number</label>
+              <input type="number" id="cell" />
+            </div>
+            <div>
+              <label for="psw">Password</label>
+              <input
+                type="password"
+                id="psw"
+                required
+                pattern=".{6,}"
+                title="La password deve contenere almeno 6 caratteri"
+              />
+            </div>
+            <div>
+              <label for="psw-conf">Confirm Password</label>
+              <input
+                type="password"
+                id="psw-conf"
+                required
+                pattern=".{6,}"
+                title="La conferma della password deve contenere almeno 6 caratteri"
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div class="bot-section">
+          <button>Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
